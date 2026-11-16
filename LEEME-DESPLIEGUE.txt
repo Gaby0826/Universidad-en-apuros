@@ -1,0 +1,21 @@
+UNIVERSIDAD EN APUROS - BUILD WEB ACTUALIZADO
+============================================
+
+Sitio estático completo exportado desde la versión más reciente del juego.
+Contiene index.html, Godot JS/WebAssembly, el PCK con recursos y las piezas
+necesarias para que el motor cargue en navegador.
+
+DESPLIEGUE
+- Extrae los archivos directamente en la carpeta raíz del sitio.
+- En Visual Studio/IIS: publica esta carpeta como sitio estático.
+- Sirve por HTTP o HTTPS; no abras index.html desde file://.
+- Asegura el MIME type .wasm = application/wasm (IIS normalmente lo incluye).
+
+PRUEBA LOCAL
+- Desde esta carpeta ejecuta: python3 -m http.server 8099
+- Abre http://localhost:8099/
+
+CONTROLES
+W A S D o flechas: mover; Esc: pausa; clic/Espacio/Enter: avanzar diálogos.
+Las partidas guardadas se mantienen en el almacenamiento local del navegador
+y quedan asociadas al dominio donde publiques el juego.
